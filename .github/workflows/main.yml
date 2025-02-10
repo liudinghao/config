@@ -19,7 +19,7 @@ jobs:
           
       - name: Install dependencies
         run: |
-          pip install pyyaml
+          pip install pyyaml requests  # 同时安装 pyyaml 和 requests
           
       - name: Run the overwrite script
         run: |
@@ -29,8 +29,54 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          
+          # Check for file changes
           if [[ `git status --porcelain` ]]; then
             git add .
             git commit -m "Auto update configuration"
             git push
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Check if config.yaml has changed
+        id: check_changes
+        run: |
+          echo "Checking if config.yaml has changed..."
+          if git diff --quiet HEAD^ HEAD -- configs/config.yaml; then
+            echo "No changes detected in config.yaml."
+            echo "changed=false" >> $GITHUB_ENV
+          else
+            echo "config.yaml has changed!"
+            echo "changed=true" >> $GITHUB_ENV
+          fi
+
+      - name: Update Gist if config.yaml has changed
+        if: env.changed == 'true'
+        env:
+          GH_PAT_GIST: ${{ secrets.GH_PAT_GIST }}  # 从 Secrets 获取 Personal Access Token
+        run: |
+          GIST_ID="5b19b57c1beb1ba71f29738abc84a6be"
+          FILE_NAME="config.yaml"
+
+          echo "Reading content of configs/config.yaml..."
+          CONTENT=$(jq -Rs '.' < configs/config.yaml)  # 读取文件内容并格式化为 JSON 字符串
+
+          echo "New Content (trimmed to first 100 chars):"
+          echo "$CONTENT" | cut -c1-100  # 仅打印前 100 个字符，避免日志过长
+
+          # 发送 PATCH 请求更新 Gist
+          RESPONSE=$(curl -s -o response.json -w "%{http_code}" -X PATCH "https://api.github.com/gists/$GIST_ID" \
+            -H "Authorization: token $GH_PAT_GIST" \
+            -H "Content-Type: application/json" \
+            -d "{\"files\": {\"$FILE_NAME\": {\"content\": $CONTENT}}}")
+
+          echo "GitHub API Response Code: $RESPONSE"
+          echo "GitHub API Response Body:"
+          cat response.json
+
+          # 检查是否成功
+          if [[ "$RESPONSE" -ne 200 && "$RESPONSE" -ne 201 ]]; then
+            echo "Failed to update Gist!"
+            exit 1
           fi
