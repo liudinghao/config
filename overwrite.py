@@ -6,15 +6,17 @@ import yaml
 SUB_URL = "https://oss3.cauenvao.click/api/v1/client/subscribe?token=225098b044cc17d41346237bc44bb2e8"
 # Define the path to save the configuration file
 config_file_path = "./configs/config.yaml"
-proxies = {
-    "http": "http://127.0.0.1:7890",  # 替换为你的 HTTP 代理
-    "https": "http://127.0.0.1:7890",  # 替换为你的 HTTPS 代理（如果需要）
-}
+# proxies = {
+#     "http": "http://127.0.0.1:7890",  # 替换为你的 HTTP 代理
+#     "https": "http://127.0.0.1:7890",  # 替换为你的 HTTPS 代理（如果需要）
+# }
 
 def download_config(url, file_path):
     """Download the configuration file from the specified URL and save it locally."""
     try:
-        response = requests.get(url, headers={"User-Agent": "clash.meta"}, proxies=proxies, allow_redirects=True)
+        # response = requests.get(url, headers={"User-Agent": "clash.meta"}, proxies=proxies, allow_redirects=True)
+        response = requests.get(url, headers={"User-Agent": "clash.meta"}, allow_redirects=True)
+
         response.raise_for_status()  # Raise an error for bad responses
         
         # Ensure the directory exists
