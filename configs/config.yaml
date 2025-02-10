@@ -1,0 +1,466 @@
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  enabled: true
+  ipv6: false
+  listen: 0.0.0.0:1053
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+external-controller: 0.0.0.0:9090
+log-level: info
+mixed-port: 7890
+mode: Rule
+proxies:
+- cipher: aes-128-gcm
+  name: '官网: landing.ouonetwork.com'
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48778
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 如无法更新,请从官网拉取最新订阅
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48778
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇭🇰 Hong Kong 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48778
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇭🇰 Hong Kong 02
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48777
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇭🇰 Hong Kong 03
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48775
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇭🇰 Hong Kong 04
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 42004
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇭🇰 Hong Kong 05
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 42003
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇹🇼 Taiwan 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48595
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇹🇼 Taiwan 02
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48596
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇹🇼 Taiwan 03
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48597
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇹🇼 Taiwan 04
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48598
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇹🇼 Taiwan 05
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48599
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇸🇬 Singapore 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 48890
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇸🇬 Singapore 02
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 20909
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇸🇬 Singapore 03
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 20910
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇸🇬 Singapore 04
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 20911
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇸🇬 Singapore 05
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 20912
+  server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵 Japan 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35000
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵 Japan 02
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 38000
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵 Japan 03
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35004
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵 Japan 04
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35006
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵 Japan 05
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35007
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇺🇸 United States 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35027
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇺🇸 United States 02
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 34010
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇺🇸 United States 03
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35016
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇺🇸 United States 04
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35018
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇺🇸 United States 05
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35015
+  server: s1dnfoevra3dx.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇩🇪 Germany 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 38305
+  server: 581f0676f6cbbfcf.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇩🇪 Germany 02
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 30684
+  server: 581f0676f6cbbfcf.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇬🇧 Britain 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 22398
+  server: 581f0676f6cbbfcf.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇬🇧 Britain 02
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 25520
+  server: 581f0676f6cbbfcf.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇱🇺 Luxembourg 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 30735
+  server: 581f0676f6cbbfcf.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇦🇷 Argentina 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 35011
+  server: 581f0676f6cbbfcf.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇹🇷 Turkey 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 53697
+  server: 581f0676f6cbbfcf.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇮🇳 India 01
+  password: 531d7206-a7c9-4147-ba4a-984dacfdb4de
+  port: 53690
+  server: 581f0676f6cbbfcf.h5dg9l1jwpczvs91dekk.pw
+  type: ss
+  udp: true
+proxy-groups:
+- exclude-filter: (?i)GB|流量|到期|重置|官网
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+  include-all: false
+  name: PROXY
+  proxies:
+  - 自动选择
+  - 香港节点
+  - 新加坡节点
+  - 日本节点
+  - 美国节点
+  - 台湾节点
+  type: select
+- exclude-filter: (?i)GB|流量|到期|重置|官网|Argent|Germ|Britain|India|Luxem
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+  include-all: true
+  interval: 150
+  name: 自动选择
+  tolerance: 50
+  type: url-test
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+  name: 国外AI
+  proxies:
+  - 香港节点
+  - 新加坡节点
+  - 日本节点
+  - 美国节点
+  - 台湾节点
+  type: select
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+  name: 电报服务
+  proxies:
+  - 香港节点
+  - 新加坡节点
+  - 日本节点
+  - 美国节点
+  - 台湾节点
+  type: select
+- icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
+  name: 谷歌服务
+  proxies:
+  - 香港节点
+  - 新加坡节点
+  - 日本节点
+  - 美国节点
+  - 台湾节点
+  type: select
+- exclude-filter: (?i)GB|流量|到期|重置|官网
+  filter: (?i)香港|Hong Kong|HK|🇭🇰
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+  include-all: true
+  interval: 300
+  name: 香港节点
+  tolerance: 50
+  type: url-test
+- exclude-filter: (?i)GB|流量|到期|重置|官网
+  filter: (?i)新加坡|Singapore|🇸🇬
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+  include-all: true
+  interval: 300
+  name: 新加坡节点
+  tolerance: 50
+  type: url-test
+- exclude-filter: (?i)GB|流量|到期|重置|官网
+  filter: (?i)日本|Japan|🇯🇵
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+  include-all: true
+  interval: 300
+  name: 日本节点
+  tolerance: 50
+  type: url-test
+- exclude-filter: (?i)GB|流量|到期|重置|官网
+  filter: (?i)美国|USA|🇺🇸
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+  include-all: true
+  interval: 300
+  name: 美国节点
+  tolerance: 50
+  type: url-test
+- exclude-filter: (?i)GB|流量|到期|重置|官网
+  filter: (?i)台湾|TW|🇹🇼|tw|taiwan|tai wan
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+  include-all: true
+  interval: 300
+  name: 台湾节点
+  tolerance: 50
+  type: url-test
+- exclude-filter: (?i)GB|流量|到期|重置|官网
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+  include-all: true
+  name: GLOBAL
+  proxies:
+  - 自动选择
+  - 香港节点
+  - 新加坡节点
+  - 日本节点
+  - 美国节点
+  - 台湾节点
+  type: select
+rule-providers:
+  bard:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/bard.yaml
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BardAI/BardAI.yaml
+  bing:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/bing.yaml
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+  claude:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/claude.yaml
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
+  cn_domain:
+    behavior: domain
+    format: yaml
+    interval: 86400
+    path: ./ruleset/cn_domain.yaml
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
+  cn_ip:
+    behavior: ipcidr
+    format: yaml
+    interval: 86400
+    path: ./ruleset/cn_ip.yaml
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
+  copilot:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/copilot.yaml
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
+  geolocation-!cn:
+    behavior: domain
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geolocation-!cn.yaml
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
+  google_domain:
+    behavior: domain
+    format: yaml
+    interval: 86400
+    path: ./ruleset/google_domain.yaml
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.yaml
+  google_ip:
+    behavior: ipcidr
+    format: yaml
+    interval: 86400
+    path: ./ruleset/google_ip.yaml
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
+  openai:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/openai.yaml
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+  private:
+    behavior: domain
+    format: yaml
+    interval: 86400
+    path: ./ruleset/private.yaml
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
+  telegram_domain:
+    behavior: domain
+    format: yaml
+    interval: 86400
+    path: ./ruleset/telegram_domain.yaml
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml
+  telegram_ip:
+    behavior: ipcidr
+    format: yaml
+    interval: 86400
+    path: ./ruleset/telegram_ip.yaml
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml
+rules:
+- RULE-SET,private,DIRECT
+- RULE-SET,bing,国外AI
+- RULE-SET,copilot,国外AI
+- RULE-SET,bard,国外AI
+- RULE-SET,openai,国外AI
+- RULE-SET,claude,国外AI
+- RULE-SET,telegram_domain,电报服务
+- RULE-SET,telegram_ip,电报服务
+- RULE-SET,google_domain,谷歌服务
+- RULE-SET,google_ip,谷歌服务
+- RULE-SET,geolocation-!cn,PROXY
+- RULE-SET,cn_domain,DIRECT
+- RULE-SET,cn_ip,DIRECT
+- MATCH,PROXY
