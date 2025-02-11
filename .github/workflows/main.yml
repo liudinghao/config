@@ -35,23 +35,13 @@ jobs:
             git add .
             git commit -m "Auto update configuration"
             git push
+            echo "changed=true" >> $GITHUB_ENV  # 代码有变更，设置 changed=true
           else
             echo "No changes to commit."
+            echo "changed=false" >> $GITHUB_ENV  # 没有变更，设置 changed=false
           fi
 
-      - name: Check if config.yaml has changed
-        id: check_changes
-        run: |
-          echo "Checking if config.yaml has changed..."
-          if git diff --quiet HEAD^ HEAD -- configs/config.yaml; then
-            echo "No changes detected in config.yaml."
-            echo "changed=false" >> $GITHUB_ENV
-          else
-            echo "config.yaml has changed!"
-            echo "changed=true" >> $GITHUB_ENV
-          fi
-
-      - name: Update Gist if config.yaml has changed
+      - name: Update Gist
         if: env.changed == 'true'
         env:
           GH_PAT_GIST: ${{ secrets.GH_PAT_GIST }}  # 从 Secrets 获取 Personal Access Token
