@@ -2,7 +2,7 @@ name: 'Update Configuration'
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -60,10 +60,7 @@ jobs:
           FILE_NAME="config.yaml"
 
           echo "Reading content of configs/config.yaml..."
-          CONTENT=$(jq -Rs '.' < configs/config.yaml)  # 读取文件内容并格式化为 JSON 字符串
-
-          echo "New Content (trimmed to first 100 chars):"
-          echo "$CONTENT" | cut -c1-100  # 仅打印前 100 个字符，避免日志过长
+          CONTENT=$(jq -Rs '.' < configs/config.yaml)
 
           # 发送 PATCH 请求更新 Gist
           RESPONSE=$(curl -s -o response.json -w "%{http_code}" -X PATCH "https://api.github.com/gists/$GIST_ID" \
@@ -72,11 +69,3 @@ jobs:
             -d "{\"files\": {\"$FILE_NAME\": {\"content\": $CONTENT}}}")
 
           echo "GitHub API Response Code: $RESPONSE"
-          echo "GitHub API Response Body:"
-          cat response.json
-
-          # 检查是否成功
-          if [[ "$RESPONSE" -ne 200 && "$RESPONSE" -ne 201 ]]; then
-            echo "Failed to update Gist!"
-            exit 1
-          fi
