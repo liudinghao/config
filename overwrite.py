@@ -69,19 +69,19 @@ def update_config(config):
             "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png",
             "name": "国外AI",
             "type": "select",
-            "proxies": ["香港节点", "新加坡节点", "日本节点", "美国节点", "台湾节点"],
+            "proxies": ["自动选择", "香港节点", "新加坡节点", "日本节点", "美国节点", "台湾节点"],
         },
         {
             "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png",
             "name": "电报服务",
             "type": "select",
-            "proxies": ["香港节点", "新加坡节点", "日本节点", "美国节点", "台湾节点"],
+            "proxies": ["自动选择", "香港节点", "新加坡节点", "日本节点", "美国节点", "台湾节点"],
         },
         {
             "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png",
             "name": "谷歌服务",
             "type": "select",
-            "proxies": ["香港节点", "新加坡节点", "日本节点", "美国节点", "台湾节点"],
+            "proxies": ["自动选择", "香港节点", "新加坡节点", "日本节点", "美国节点", "台湾节点"],
         },
         {
             "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png",
